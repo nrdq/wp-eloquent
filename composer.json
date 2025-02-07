@@ -1,5 +1,5 @@
 {
-    "name": "as247/wp-eloquent",
+    "name": "nrdq/wp-eloquent",
     "description": "Eloquent ORM for wordpress.",
     "license": "MIT",
     "homepage": "https://github.com/as247/wp-eloquent",
@@ -12,6 +12,10 @@
         {
             "name": "As247",
             "email": "as247@vui360.com"
+        },
+        {
+            "name": "Nordique",
+            "email": "beheer@nordique.nl"
         }
     ],
     "require": {
