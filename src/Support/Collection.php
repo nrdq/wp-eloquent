@@ -959,6 +959,25 @@ class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerabl
 
         return new static(Arr::random($this->items, $number));
     }
+    
+
+    /**
+     * Reduce the collection to a single value.
+     *
+     * @param  callable  $callback
+     * @param  mixed  $initial
+     * @return mixed
+     */
+    public function reduce(callable $callback, $initial = null)
+    {
+        $result = $initial;
+
+        foreach ($this as $value) {
+            $result = $callback($result, $value);
+        }
+
+        return $result;
+    }
 
     /**
      * Replace the collection items with the given items.
